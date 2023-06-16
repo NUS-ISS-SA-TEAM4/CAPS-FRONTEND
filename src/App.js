@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  
+
+  render() {
+    return (
+      <React.Fragment>
+        {/* Logo and Title of website */}
+        <div id="nav">
+        </div>
+
+        <div className="App">
+          
+            <div className='fixed-bg bg-1'>
+            </div>
+            <div className="fixed-bg bg-2"><span className="title1" > </span></div>
+
+            <div className="fixed-bg bg-3"><span className="title2" ></span></div>
+
+          </div>
+          
+
+        
+      </React.Fragment>
+    );
+  }
 }
 
+// Render the React component inside the 'root' element
 export default App;
+
