@@ -19,25 +19,20 @@ body {
 
 
 /* first section of wrapper*/
-
-.bg-2 {
-  background-image: url("https://wallpaperaccess.com/full/3901230.jpg");
-  justify-content: center;
-}
-
-/* 2nd section of wrapper*/
-
 .bg-1 {
   background-color: #fffff0;
   background-size: cover;
   
 }
 
-/* 3rd section of wrapper*/
+/* 2nd section of wrapper*/
 
-.bg-3 {
-  background-image: url("https://thumbs.dreamstime.com/z/composite-image-students-holding-folders-college-against-black-background-63471333.jpg");
+.bg-2 {
+  background-image: url("https://wallpaperaccess.com/full/3901230.jpg");
+  background-position: top !important;
 }
+
+
 
 .account-setting {
   margin-left: 0 ; /* Reset the default margin */
