@@ -607,7 +607,7 @@ export default function Student() {
     <div className="account-setting">
       <div className="container">
         <div className="row">
-          <div className="col-md-3 mb-3 pr-xl-5">
+          <div className="col-md-3 mb-3 mt-5 pr-xl-5">
             <b>
               <h2>Welcome Student</h2>
             </b>
@@ -707,7 +707,7 @@ export default function Student() {
             </ul>
           </div>
 
-          <div className="col-md-9">
+          <div className="col-md-9 mt-5">
             <div className="tab-content" id="settingTabContent">
               {renderContent()}
             </div>

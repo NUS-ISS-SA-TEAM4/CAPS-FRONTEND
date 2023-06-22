@@ -10,17 +10,19 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: 300px;
+  background-position: center top;
+  height: 350px;
   width: 100%;
-  color: white;
+
   
 }
 
 
+
 /* first section of wrapper*/
 .bg-1 {
-  background-color: #fffff0;
+  
+  background-color:  RGB(200, 190, 174);
   background-size: cover;
   
 }
@@ -28,10 +30,12 @@ body {
 /* 2nd section of wrapper*/
 
 .bg-2 {
-  background-image: url("https://wallpaperaccess.com/full/3901230.jpg");
-  background-position: top !important;
+  background-image: url("https://media.istockphoto.com/id/1138138146/photo/rear-view-of-large-group-of-students-on-a-class-at-lecture-hall.jpg?s=612x612&w=0&k=20&c=x2DlCU-1Acw5YwEBfo82QyeL1zvbg57smQ935mp6gv8=");
+  height: 300px;
+  filter: brightness(90%);
+  background-position: center top !important;
+  opacity: 0.9;
 }
-
 
 
 .account-setting {
@@ -46,10 +50,112 @@ body {
 
 
 h2{
-  color: blue !important;
-  margin-bottom: 5px !important;
+  /* color: blue !important; */
+  /* margin-bottom: 5px !important; */
+}
+
+.navlink{
+  color: dark burlywood !important;
 }
 
 .fa{
   margin-right: 5px;;
 }
+
+/* Login form input css */
+button[type="button"] {
+  padding: 5px;
+  background: #516391;
+  color: white;
+  letter-spacing: 0px;
+  text-transform: none;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+/* login form submit button */
+input[type="submit"]:hover,
+button[type="button"]:hover {
+  background: #bf1650;
+  color: white;
+}
+
+/* login  form submit button */
+input[type="submit"]:active {
+  transition: 0.3s all;
+  top: 2px;
+}
+
+/* login form input error message colour */
+.loginFormError {
+  color: red;
+}
+
+/* register form input error message colour */
+.registerFormError {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+/* form select css */
+select,
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+
+
+/* submit button css */
+input[type="submit"],
+.button {
+  background: brown;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  font-weight: lighter;
+  transition: 0.3s all;
+}
+
+
+.h1 {
+  color: #516391;
+}
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
