@@ -10,6 +10,7 @@ import { ToastContainer } from "react-toastify";
 import { baseUrl } from "./api/url";
 import Student from "./components/student";
 import LandingPage from "./components/landingPage";
+import Lecturer from "./components/lecturer";
 
 export default function App() {
   const [token, setToken] = useState("");
@@ -18,7 +19,7 @@ export default function App() {
     if (localStorage.getItem("accessToken")) {
       const getUser = async () => {
         try {
-          const response = await axios.get(baseUrl + "students", {
+          const response = await axios.get(baseUrl + "student", {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
             },
@@ -130,7 +131,7 @@ export default function App() {
         <Route
           exact
           path="/student/login"
-          element={<StudentLogin setLoginUser={loginUser} />}
+          element={<StudentLogin setLoginUser={loginUser}/>}
         />
 
         <Route exact path="/lecturer/login">
@@ -160,9 +161,15 @@ export default function App() {
           element={<Student activeTab="enrolCourse" />}
         />
 
-        <Route exact path="/successPurchase">
-          {/* <SuccessfulPayment /> */}
-        </Route>
+        {/* <Route exact path="/successPurchase">
+           element={< />} */}
+          
+         
+         <Route path= "/lecturer/profile"
+            element={<Lecturer activeTab="profile-Setting"/>} 
+        />                                                                                                                
+
+
       </Routes>
       </div>
       <div className="fixed-bg bg-2"></div>

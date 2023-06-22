@@ -22,13 +22,14 @@ export default function LoginPage(props) {
   
   const onSubmit = async (formData) => {
 
-    const response = await axios.post(baseUrl + "users/login", {
+    const response = await axios.post(baseUrl + "students/login", {
       email: formData.email,
       password: formData.password
     });
-    
-    if (response.data.accessToken) {
-      localStorage.setItem('accessToken', response.data.accessToken);
+
+    console.log(response.data);
+    if (response.data) {
+    //   localStorage.setItem('profileId', response.data.accessToken);
 
       setLoginUser();
 
@@ -37,19 +38,19 @@ export default function LoginPage(props) {
         toastId: "login-success"
 
       })
-      redirect.push("/student")
+      redirect('/student')
     } else {
       toast.error("Login failed!", {
         autoClose: 3000,
         toastId: "login-failed"
       })
-      redirect.push("/student")
+      redirect('/')
     }
   }
 
   return (
 
-    <form onSubmit={handleSubmit(onSubmit)} class=' d-flex flex-column align-items-start ps-4'>
+    <form onSubmit={handleSubmit(onSubmit)} class=' d-flex flex-column align-items-start ps-4 pt-2'>
       <Headers />
       <div class='w-50'>
         <input {...register("email")} placeholder="Email" name='email' value={email} onChange={(evt) => setEmail(evt.target.value)} />
